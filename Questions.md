@@ -17,4 +17,5 @@ Solution([via](https://medium.com/@mhagemann/how-to-fix-ssh-permission-denied-wi
 
 Solution [via](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058)
 
-1. 
+1. find make command file at 
+
