@@ -6,6 +6,23 @@
 
 ![](https://i.imgur.com/9Q65e8K.png)
 
+- Action
+  -  改善O(|V|^2)，因此提出？
+- State
+  - partially modified graph
+- Reward
+  - <img src="C:\Users\wwj\AppData\Roaming\Typora\typora-user-images\image-20201022113503013.png" alt="image-20201022113503013"  />
+  - 最終才會得到一個大R，中間不會有reward
+- Terminal
+  - modifies m edges
+  - fixed length MDP process
+
+
+
+
+
+
+
 ---
 
 ### [Attacking Graph Convolutional Networks via Rewiring](https://arxiv.org/pdf/1906.03750.pdf)
