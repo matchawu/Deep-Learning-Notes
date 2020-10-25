@@ -25,5 +25,9 @@ First, check out the Makefile. In my experience, the `$CUDA_HOME` mentioned in m
 
 ### Networkx version
 
-It is so weird.
+Meeting `AttributeError: Graphs has no attribute node`, and all the solutions on-line said it would be fine after you reinstall networkx v2.3, however, it didn't work for me. After several detours, the problem solved after installing network v1.11.
 
+- The problem occurred when I try to run the code https://github.com/Hanjun-Dai/graph_adversarial_attack
+- I create virtual environment first, and it contains Python2.7, which is suit to the .whl torch vision mentioned in the respository.
+- And the problem occurred!
+- Finally it's solved and the environment is built in Python 3.6, torch 0.3.1, and networkx 1.11.
