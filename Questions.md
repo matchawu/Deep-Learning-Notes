@@ -31,3 +31,13 @@ Meeting `AttributeError: Graphs has no attribute node`, and all the solutions on
 - I create virtual environment first, and it contains Python2.7, which is suit to the .whl torch vision mentioned in the respository.
 - And the problem occurred!
 - Finally it's solved and the environment is built in Python 3.6, torch 0.3.1, and networkx 1.11.
+
+### Visual Studio Code - ssh connect to server
+
+To my surprise, this bothered me twice this summer. So I have to clarify the steps  as a record.
+
+- Install Windows SSH Client in Settings
+- Set up the SSH keys: https://www.footmark.info/linux/centos/windows-ssh-nopassword-linux/
+- Get `id_rsa.pub`  (your public key in your computer), and authorize it on the server which you feel like connecting to. After finishing it, you could connect to server without password.
+- ref: https://xenby.com/b/220-%e6%95%99%e5%ad%b8-%e7%94%a2%e7%94%9fssh-key%e4%b8%a6%e4%b8%94%e9%80%8f%e9%81%8ekey%e9%80%b2%e8%a1%8c%e5%85%8d%e5%af%86%e7%a2%bc%e7%99%bb%e5%85%a5
+
