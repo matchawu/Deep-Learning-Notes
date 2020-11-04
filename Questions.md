@@ -41,3 +41,7 @@ To my surprise, this bothered me twice this summer. So I have to clarify the ste
 - Get `id_rsa.pub`  (your public key in your computer), and authorize it on the server which you feel like connecting to. After finishing it, you could connect to server without password.
 - ref: https://xenby.com/b/220-%e6%95%99%e5%ad%b8-%e7%94%a2%e7%94%9fssh-key%e4%b8%a6%e4%b8%94%e9%80%8f%e9%81%8ekey%e9%80%b2%e8%a1%8c%e5%85%8d%e5%af%86%e7%a2%bc%e7%99%bb%e5%85%a5
 
+### LeetCode無法登入問題：使用Cookie登入
+
+link: https://zhuanlan.zhihu.com/p/119999079
+
