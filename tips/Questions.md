@@ -45,3 +45,10 @@ To my surprise, this bothered me twice this summer. So I have to clarify the ste
 
 link: https://zhuanlan.zhihu.com/p/119999079
 
+### Anaconda 無法順利安裝
+
+發現：安裝流程跑完以後再開始功能表看不到Anaconda Prompt
+
+可能造成原因：reinstall或是uninstall的時候出現未知問題
+
+解決方法：在安裝檔上右鍵用系統管理員執行，就可以了
