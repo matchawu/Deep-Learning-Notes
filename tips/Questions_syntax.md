@@ -65,5 +65,9 @@ res = pd.merge(left,right, left_index=True, right_index=True, how='outer')
 print(res)
 ```
 
+![image-20201208150146067](C:\Users\wwj\AppData\Roaming\Typora\typora-user-images\image-20201208150146067.png)
+
+而後會有NaN，再用.fillna(0.0)來處理即可。
+
 ---
 
