@@ -51,8 +51,6 @@
 
 
 ### 1201
-[Overleaf](https://www.overleaf.com/project/5fbf6e00af489652fee49f9f)
-
 - [x] IEEE abstract + 文法 check
 - [x] IEEE ch1 + 文法 check
 - [x] IEEE ch2 + 文法 check
