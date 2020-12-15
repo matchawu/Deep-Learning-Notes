@@ -71,3 +71,77 @@ print(res)
 
 ---
 
+### generate txt and write texts in txt
+
+[link](https://stackoverflow.com/questions/48959098/how-to-create-a-new-text-file-using-python/48964410)
+
+```python
+file = open("copy.txt", "w") 
+file.write("Your text goes here") 
+file.close() 
+```
+
+---
+
+### plt.save()
+
+需要寫在plt.show()之前，否則會存到全白的圖
+
+---
+
+### file or folder exists or not
+
+[link](https://www.guru99.com/python-check-if-file-exists.html) [link2](https://www.tutorialspoint.com/How-can-I-create-a-directory-if-it-does-not-exist-using-Python)
+
+```python
+import os.path
+from os import path
+path.exists("guru99.txt") # file
+```
+
+```python
+import os
+if not os.path.exists('my_folder'):
+    os.makedirs('my_folder') # create folder if not exists
+```
+
+---
+
+### datetime
+
+[link](https://www.programiz.com/python-programming/datetime/strftime) [link2](https://www.programiz.com/python-programming/datetime/current-time)
+
+```python
+from datetime import datetime
+
+now = datetime.now()
+
+current_time = now.strftime("%H:%M:%S")
+print("Current Time =", current_time)
+```
+
+[處理時區問題](https://kkc.github.io/2015/07/08/dealing-with-datetime-and-timezone-in-python/) [可用時區列表](https://gist.github.com/pamelafox/986163)
+
+---
+
+### sample n element from list
+
+[link](https://www.geeksforgeeks.org/python-random-sample-function/)
+
+```python
+# import random  
+import random 
+
+# Prints list of random items of 
+# length 3 from the given list. 
+list1 = [1, 2, 3, 4, 5, 6]  
+print("With list:", random.sample(list1, 3)) 
+  
+# Prints list of random items of 
+# length 4 from the given string.  
+string = "GeeksforGeeks"
+print("With string:", random.sample(string, 4))
+```
+
+---
+
