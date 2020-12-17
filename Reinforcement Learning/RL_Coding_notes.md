@@ -17,10 +17,18 @@
 
 action_space & observation_space
 
+可以參考 [官方文檔](https://gym.openai.com/docs/#spaces)
+
 ```python
 self.action_space = spaces.Box(low=np.array([-self.bounds]), high=np.array([self.bounds]),dtype=np.float32)
 
 self.observation_space = spaces.Discrete(4)
+```
+
+done
+
+```python
+done = self.guess_count >= self.guess_max
 ```
 
 

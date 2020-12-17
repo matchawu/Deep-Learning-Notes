@@ -154,3 +154,41 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 import pandas
 ```
+
+---
+
+### isinstance
+
+[link](https://www.runoob.com/python/python-func-isinstance.html)
+
+```python
+>>>a = 2
+>>> isinstance (a,int)
+True
+>>> isinstance (a,str)
+False
+>>> isinstance (a,(str,int,list))    # 是元组中的一个返回 True
+True
+```
+
+---
+
+### AssertionError
+
+[link](https://www.geeksforgeeks.org/python-assertion-error/)
+
+```python
+# Handling it manually 
+try: 
+    x = 1
+    y = 0
+    assert y != 0, "Invalid Operation"
+    print(x / y) 
+  
+# the errror_message provided by the user gets printed  
+except AssertionError as msg:  
+    print(msg) 
+```
+
+---
+
