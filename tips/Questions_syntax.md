@@ -6,7 +6,7 @@
 
 link: https://stackoverflow.com/questions/26599347/groupby-pandas-dataframe-and-calculate-mean-and-stdev-of-one-column-and-add-the
 
-```py
+```python
 result = df.groupby(['a'], as_index=False).agg(
                       {'c':['mean','std'],'b':'first', 'd':'first'})
 ```
@@ -28,7 +28,6 @@ c,b,d 皆是欄位名稱，：後面接的是group以後要那個欄位所做的
 ```python
 list1 = [1, 2]
 list2 = [1, 3]
-
 
 list1_as_set = set(list1)
 intersection = list1_as_set.intersection(list2)
@@ -145,3 +144,13 @@ print("With string:", random.sample(string, 4))
 
 ---
 
+### ignore FutureWarning
+
+[link](https://stackoverflow.com/questions/15777951/how-to-suppress-pandas-future-warning)
+
+```python
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
+import pandas
+```
