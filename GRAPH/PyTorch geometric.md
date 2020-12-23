@@ -16,3 +16,5 @@ new_graph = Data(edge_index=new_edges,
 
 ---
 
+### GCN training - node classification on Cora dataset
+

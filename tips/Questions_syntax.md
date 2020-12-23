@@ -192,3 +192,21 @@ except AssertionError as msg:
 
 ---
 
+### list to string, string to list
+
+[link](https://www.geeksforgeeks.org/python-program-to-convert-a-list-to-string/)
+
+```python
+# list to string
+s = 'hihihi'
+s_list = list(s)
+
+# string to list
+s = ['I', 'want', 4, 'apples', 'and', 18, 'bananas'] 
+  
+# using list comprehension 
+listToStr = ' '.join([str(elem) for elem in s]) 
+  
+print(listToStr) 
+```
+

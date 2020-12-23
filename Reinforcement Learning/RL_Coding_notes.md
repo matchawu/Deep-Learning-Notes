@@ -4,7 +4,9 @@
 
 >  以openAI gym為基底做出DQN的自定義環境
 
-主要透過這個回答裡面的步驟實現：[ref link](https://stackoverflow.com/questions/44469266/how-to-implement-custom-environment-in-keras-rl-openai-gym) [code link](https://github.com/openai/gym/blob/master/gym/envs/toy_text/hotter_colder.py)
+主要透過這個回答裡面的步驟實現：[ref link](https://stackoverflow.com/questions/44469266/how-to-implement-custom-environment-in-keras-rl-openai-gym) [code link](https://github.com/openai/gym/blob/master/gym/envs/toy_text/hotter_colder.py) 
+
+code link 裡面的 GitHub code 說明很詳盡
 
 1. Constructor__init__ method
 2. Action space
