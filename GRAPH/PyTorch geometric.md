@@ -2,6 +2,17 @@
 
 [documentation](https://pytorch-geometric.readthedocs.io/en/latest/index.html)
 
+### Installation
+
+```
+pip install torch-sparse
+pip install torch-cluster
+pip install torch-spline-conv
+pip install torch-geometric
+```
+
+也可以等run出來的error在看要裝其中哪幾個就好
+
 ### Customized Dataset
 
 ```python

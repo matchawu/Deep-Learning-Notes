@@ -52,3 +52,8 @@ link: https://zhuanlan.zhihu.com/p/119999079
 可能造成原因：reinstall或是uninstall的時候出現未知問題
 
 解決方法：在安裝檔上右鍵用系統管理員執行，就可以了
+
+### Jupyter Notebook 500 : Internal Server Error
+
+[link](https://stackoverflow.com/questions/36851746/jupyter-notebook-500-internal-server-error)
+
