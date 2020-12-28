@@ -59,7 +59,7 @@ link: https://zhuanlan.zhihu.com/p/119999079
 
 ### Jupyter: connecting to kernel / No kernel
 
-[link](https://stackoverflow.com/questions/54963043/jupyter-notebook-no-connection-to-server-because-websocket-connection-fails) [link2](https://github.com/jupyter/notebook/issues/4399)
+[link](https://stackoverflow.com/questions/54963043/jupyter-notebook-no-connection-to-server-because-websocket-connection-fails) [link2](https://github.com/jupyter/notebook/issues/4399) [link3](https://github.com/jupyter/notebook/issues/4399)
 
 修了有點久，本來以為別人的方法並不適用在我身上。後來跳出了virtual env去檢查base env的tornado，conda list中是5.0.2版(<=5.1.1)，然而pip list裡面的tornado是6.多版，因此果斷下指令：
 

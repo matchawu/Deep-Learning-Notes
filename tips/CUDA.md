@@ -4,7 +4,17 @@
 
 ## 指令
 
+problem:
 
+```
+E: unable to locate package cuda
+```
+
+最後9.1裝起來會有問題因此還是先維持10.1。
+
+問題應該是9.1只有Ubuntu 17.04的key，但我的server是16.04的，需要降其他packages的版本才不會有問題。
+
+[參考還沒細看](https://comzyh.com/blog/archives/967/)
 
 ## 安裝
 
