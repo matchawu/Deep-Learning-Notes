@@ -57,3 +57,43 @@ link: https://zhuanlan.zhihu.com/p/119999079
 
 [link](https://stackoverflow.com/questions/36851746/jupyter-notebook-500-internal-server-error)
 
+### Jupyter: connecting to kernel / No kernel
+
+[link](https://stackoverflow.com/questions/54963043/jupyter-notebook-no-connection-to-server-because-websocket-connection-fails) [link2](https://github.com/jupyter/notebook/issues/4399)
+
+修了有點久，本來以為別人的方法並不適用在我身上。後來跳出了virtual env去檢查base env的tornado，conda list中是5.0.2版(<=5.1.1)，然而pip list裡面的tornado是6.多版，因此果斷下指令：
+
+```
+sudo pip3 uninstall tornado
+sudo pip3 install tornado==5.1.1
+```
+
+最後重新連jupyter，可以連到base env的Python 3，也可以連到自己訂的Kernel上(會顯示kernel idle，為空心圓，如果是原本的情況則是實心圓點)
+
+![image-20201228115108991](C:\Users\wwj\AppData\Roaming\Typora\typora-user-images\image-20201228115108991.png)
+
+![image-20201228115238801](C:\Users\wwj\AppData\Roaming\Typora\typora-user-images\image-20201228115238801.png)
+
+解決目前的問題緊接著回到原本CUDA的問題上(淚奔
+
+### Jupyter: 404 GET...Kernel does not exist...
+
+trouble:
+
+![image-20201228114039802](C:\Users\wwj\AppData\Roaming\Typora\typora-user-images\image-20201228114039802.png)
+
+[link](https://github.com/ipython/ipython/issues/11270#issuecomment-427448691)
+
+```
+pip uninstall -y ipython prompt_toolkit
+pip install ipython prompt_toolkit
+```
+
+### Jupyter: list all kernels
+
+[link](https://github.com/ipython/ipython/issues/7280)
+
+```
+ipython kernelspec list
+```
+
