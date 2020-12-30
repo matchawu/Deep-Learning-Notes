@@ -1,9 +1,7 @@
 # Questions
 
-[![hackmd-github-sync-badge](https://hackmd.io/G7GFTPnNSXOH4iEq87a0tA/badge)](https://hackmd.io/G7GFTPnNSXOH4iEq87a0tA)
+## Cannot git clone
 
-
-### Cannot git clone
 ![](https://i.imgur.com/YuRFJUk.png)
 
 Solution([via](https://medium.com/@mhagemann/how-to-fix-ssh-permission-denied-with-git-clone-f669b65f90ac)):
@@ -12,7 +10,8 @@ Solution([via](https://medium.com/@mhagemann/how-to-fix-ssh-permission-denied-wi
 4. Paste it on GitHub settings>SSH keys & GPG keys
 5. Try again `git clone`
 
-### Command not found
+## Command not found
+
 ![](https://i.imgur.com/KCJIJtr.png)
 
 Solution [via](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058)
@@ -23,7 +22,7 @@ Solution [via](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058
 
 First, check out the Makefile. In my experience, the `$CUDA_HOME` mentioned in my Makefile but actually it is undefined. So I have to first define it in command line like `CUDA_HOME=/usr/local/bin/` or whatever you want it to be. Then, `make` it again.
 
-### Networkx version
+## Networkx version
 
 Meeting `AttributeError: Graphs has no attribute node`, and all the solutions on-line said it would be fine after you reinstall networkx v2.3, however, it didn't work for me. After several detours, the problem solved after installing network v1.11.
 
@@ -32,7 +31,7 @@ Meeting `AttributeError: Graphs has no attribute node`, and all the solutions on
 - And the problem occurred!
 - Finally it's solved and the environment is built in Python 3.6, torch 0.3.1, and networkx 1.11.
 
-### Visual Studio Code - ssh connect to server
+## Visual Studio Code - ssh connect to server
 
 To my surprise, this bothered me twice this summer. So I have to clarify the steps  as a record.
 
@@ -41,11 +40,11 @@ To my surprise, this bothered me twice this summer. So I have to clarify the ste
 - Get `id_rsa.pub`  (your public key in your computer), and authorize it on the server which you feel like connecting to. After finishing it, you could connect to server without password.
 - ref: https://xenby.com/b/220-%e6%95%99%e5%ad%b8-%e7%94%a2%e7%94%9fssh-key%e4%b8%a6%e4%b8%94%e9%80%8f%e9%81%8ekey%e9%80%b2%e8%a1%8c%e5%85%8d%e5%af%86%e7%a2%bc%e7%99%bb%e5%85%a5
 
-### LeetCode無法登入問題：使用Cookie登入
+## LeetCode無法登入問題：使用Cookie登入
 
 link: https://zhuanlan.zhihu.com/p/119999079
 
-### Anaconda 無法順利安裝
+## Anaconda 無法順利安裝
 
 發現：安裝流程跑完以後再開始功能表看不到Anaconda Prompt
 
@@ -53,11 +52,11 @@ link: https://zhuanlan.zhihu.com/p/119999079
 
 解決方法：在安裝檔上右鍵用系統管理員執行，就可以了
 
-### Jupyter Notebook 500 : Internal Server Error
+## Jupyter Notebook 500 : Internal Server Error
 
 [link](https://stackoverflow.com/questions/36851746/jupyter-notebook-500-internal-server-error)
 
-### Jupyter: connecting to kernel / No kernel
+## Jupyter: connecting to kernel / No kernel
 
 [link](https://stackoverflow.com/questions/54963043/jupyter-notebook-no-connection-to-server-because-websocket-connection-fails) [link2](https://github.com/jupyter/notebook/issues/4399) [link3](https://github.com/jupyter/notebook/issues/4399)
 
@@ -76,7 +75,7 @@ sudo pip3 install tornado==5.1.1
 
 解決目前的問題緊接著回到原本CUDA的問題上(淚奔
 
-### Jupyter: 404 GET...Kernel does not exist...
+## Jupyter: 404 GET...Kernel does not exist...
 
 trouble:
 
@@ -89,7 +88,7 @@ pip uninstall -y ipython prompt_toolkit
 pip install ipython prompt_toolkit
 ```
 
-### Jupyter: list all kernels
+## Jupyter: list all kernels
 
 [link](https://github.com/ipython/ipython/issues/7280)
 
@@ -97,3 +96,8 @@ pip install ipython prompt_toolkit
 ipython kernelspec list
 ```
 
+## Jupyter: open folder
+
+[link](https://stackoverflow.com/questions/35254852/how-to-change-the-jupyter-start-up-folder?page=1&tab=votes#tab-top)
+
+![image-20201228174735636](C:\Users\wwj\AppData\Roaming\Typora\typora-user-images\image-20201228174735636.png)

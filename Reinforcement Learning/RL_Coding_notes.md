@@ -49,9 +49,28 @@ done
 done = self.guess_count >= self.guess_max
 ```
 
+### 問題
 
+在做完上述步驟以後，一直卡在以下的問題：
 
----
+```python
+import gym
+import gym_graph
+env = gym.make('gym_graph:graph-v0')
+```
+
+第二行會出現以下錯誤：
+
+```
+---------------------------------------------------------------------------
+ModuleNotFoundError                       Traceback (most recent call last)
+<ipython-input-11-e98577d7cfae> in <module>
+      1 import gym
+----> 2 import gym_graph
+      3 env = gym.make('gym_graph:graph-v0')
+
+ModuleNotFoundError: No module named 'gym_graph'
+```
 
 
 
