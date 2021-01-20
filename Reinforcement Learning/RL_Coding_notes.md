@@ -72,5 +72,6 @@ ModuleNotFoundError                       Traceback (most recent call last)
 ModuleNotFoundError: No module named 'gym_graph'
 ```
 
+後來的解法：
 
-
+> 不需要引入至gym底下，直接當成一個function即可

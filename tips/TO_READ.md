@@ -4,7 +4,7 @@
 
 - https://github.com/pytorch/pytorch/issues/1668
 
-
+- nn.Identity
 
 ## 參考資料
 

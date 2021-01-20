@@ -29,7 +29,39 @@ new_edges = torch.cat((edges, edge_add), axis=1) # add edge
 
 
 
+### 取得gradients
 
+```python
+torch.autograd.grad(<填寫loss>, <對誰微分>, retain_graph=True)[0]
+```
+
+另外，餵進去model的input需要設定為`requires_grad = True`才可以取得gradients
+
+```python
+X = Variable(X , requires_grad = True)
+```
+
+### torch.dtype
+
+[link](https://pytorch.org/docs/stable/tensor_attributes.html)
+
+### network parameters
+
+PyTorch取得整個網路Net()的參數的方法如下：
+
+```python
+for p in net.parameters():
+    print(p)
+    # or do something you want
+```
+
+為此對整個Net()的參數做了L2 norm：
+
+```python
+l2_norm = 0.0
+for p in model.parameters():
+    l2_norm += torch.norm(p, 2) # torch.norm(sth, p) p代表L幾
+```
 
 
 
@@ -46,3 +78,7 @@ new_edges = torch.cat((edges, edge_add), axis=1) # add edge
 ## Adversarial using PyTorch
 
 [https://adversarial-ml-tutorial.org/](https://adversarial-ml-tutorial.org/)
+
+## Tensorflow to PyTorch
+
+[tensorflow改寫為pytorch的方法總結](https://blog.csdn.net/lrt366/article/details/96211913)
