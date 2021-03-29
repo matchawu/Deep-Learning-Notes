@@ -2,6 +2,8 @@
 
 `各種cuda問題`
 
+[對應版本](https://www.tensorflow.org/install/source#linux)
+
 ## 指令
 
 problem:

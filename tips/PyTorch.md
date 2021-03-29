@@ -1,5 +1,41 @@
 # PyTorch
 
+### CUDA設定
+
+究竟是用哪張卡？
+
+```python
+import os
+import torch
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
+print(torch.cuda.is_available())
+print(torch.cuda.current_device())
+print(torch.cuda.device(0))
+print(torch.cuda.device(1))
+```
+
+```python
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+import torch
+print(torch.cuda.is_available())
+print(torch.cuda.current_device())
+>>> True
+0
+```
+
+如果指定以下這樣的話，指定cuda:1，去.to(device)時又會遇到``` CUDA error: invalid device ordinal```的錯誤。
+
+```python
+device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
+print(device)
+>>> cuda:1
+```
+
+因為一開始os.environ便只有讓他看到第二張卡("1")，所以在這個程式裡面，"1"就已經是cuda:0了，不會有另一個可見的cuda，故改成cuda:0可以順利找到第二張卡。
+
+
+
 ### reshape
 
 ```python

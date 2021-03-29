@@ -1,5 +1,30 @@
 # 語法相關問題
 
+### .all() vs .any() 小實驗
+
+參考：https://medium.com/jeasee%E9%9A%A8%E7%AD%86/python-all-any-40bfdb39f6e8
+
+因為之前總是跳過瞭解這個差別，所以現在來用個小實驗自行領悟一下。
+
+```python
+import numpy as np
+
+# init a boolean array: all False
+k = np.array(np.zeros((2708)), dtype=bool)
+
+# experiments
+print(k.all()==True, k.any()==True) # >> False False
+
+# change an element to True
+k[0] = True 
+print(k.all()==True, k.any()==True) # >> False True
+print(k.all()==False, k.any()==False) # >> True False 
+```
+
+從上面的小實驗就可以推測出這兩者的差別：這兩者都得用iterative的方式去想它們，all()只要有個錯他就是False，any()只要裡面有一個是對的他就是True。
+
+以原本就是boolean形式的array來看可能會比較容易混淆，可以先看左式，`k.all()`以及`k.any()`，直接去想它們，前者在所有為False但有一個為True的陣列裡，會得到False，因此`k.all()==False`會回傳True，而後者則是因為這個陣列裡面有一個True，所以就能回傳True，因此在`k.any()==True`是成立的。
+
 ---
 
 ### Groupby + 對groupby的項目計算各種統計值
