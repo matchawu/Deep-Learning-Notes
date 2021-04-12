@@ -1,5 +1,28 @@
 # PyTorch
 
+### load and save model
+
+https://pytorch.org/tutorials/beginner/saving_loading_models.html
+
+```python
+model = Net()
+path = '' # 要存的地方
+torch.save(model.state_dict(), path)
+
+model = Net()
+model = torch.load_state_dict(path)
+```
+
+
+
+
+
+### torch.gather
+
+頭好痛。
+
+
+
 ### CUDA設定
 
 究竟是用哪張卡？
@@ -60,8 +83,6 @@ add item to Tensor [link](https://stackoverflow.com/questions/61101919/how-can-i
 ```python
 new_edges = torch.cat((edges, edge_add), axis=1) # add edge
 ```
-
-### gather
 
 
 

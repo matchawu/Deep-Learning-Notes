@@ -1,5 +1,32 @@
 # 語法相關問題
 
+### np array 按照某column排序
+
+參考：https://stackoverflow.com/questions/2828059/sorting-arrays-in-numpy-by-column
+
+```python
+a[a[:, 1].argsort()] # 1: 要按照的column，1代表第二column
+```
+
+
+
+### 寫入檔案
+
+參考：https://stackoverflow.com/questions/3263672/the-difference-between-sys-stdout-write-and-print
+
+```python
+import sys
+temp = sys.stdout                 # store original stdout object for later
+sys.stdout = open('log.txt', 'w') # redirect all prints to this log file
+print("testing123")               # nothing appears at interactive prompt
+print("another line")             # again nothing appears. it's written to log file instead
+sys.stdout.close()                # ordinary file object
+sys.stdout = temp                 # restore print commands to interactive prompt
+print("back to normal")           # this shows up in the interactive prompt
+```
+
+用途在把for包起來的training的output存起來。這樣好像是不會印出來的樣子。
+
 ### .all() vs .any() 小實驗
 
 參考：https://medium.com/jeasee%E9%9A%A8%E7%AD%86/python-all-any-40bfdb39f6e8
